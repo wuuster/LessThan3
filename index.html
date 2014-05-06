@@ -10,14 +10,14 @@
         var first = '', second = '', rest = '', names = ['Ariana', 'Blake', 'Ebony', 'Ivy', 'Jack', 'James', 'Jill'];
         for (var i = 0; i < names.length; ++i) {
             if (names[i] == 'Jack') {
-                first = names[i];
+                first += names[i] + ' ';
             } else if (names[i] == 'Jill') {
-                second = names[i];
+                second += names[i]+ ' ';
             } else {
                 rest += names[i] + ' ';
             }
         }
-        document.getElementById('content').innerHTML = first + ' ' + second + ' ' + rest;
+        document.getElementById('content').innerHTML = first +  second  + rest;
     </SCRIPT>
 </body>
 </html>
