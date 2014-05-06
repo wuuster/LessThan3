@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>KOIWU BEYAN LESS THAN 3</title>
+</head>
+<body>
+    <div id="content"></div>
+    <SCRIPT>
+        var first = '', second = '', rest = '', names = ['Ariana', 'Blake', 'Ebony', 'Ivy', 'Jack', 'James', 'Jill'];
+        for (var i = 0; i < names.length; ++i) {
+            if (names[i] == 'Jack') {
+                first += names[i];
+            } else if (names[i] == 'Jill') {
+                second += names[i];
+            } else {
+                rest += names[i] + ' ';
+            }
+        }
+        document.getElementById('content').innerHTML = first + ' ' + second + ' ' + rest;
+    </SCRIPT>
+</body>
+</html>
